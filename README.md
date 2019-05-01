@@ -13,7 +13,7 @@ Examples of **incorrect** code for this rule:
 /*eslint-env es6*/
 
 import foo from 'b'
-import bar from a
+import bar from 'a'
 ```
 
 Examples of **correct** code for this rule:
@@ -21,8 +21,7 @@ Examples of **correct** code for this rule:
 ```javascript
 /*eslint import-sort-source/import-order: "error"*/
 /*eslint-env es6*/
-
+import bar from 'a'
 import foo from 'b'
-import bar from a
 ```
 
