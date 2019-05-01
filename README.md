@@ -8,21 +8,21 @@ This rule checks all esmodule imports.
 
 Examples of **incorrect** code for this rule:
 
-``js
+```javascript
 /*eslint import-sort-source/import-order: "error"*/
 /*eslint-env es6*/
 
 import foo from 'b'
 import bar from a
-``
+```
 
 Examples of **correct** code for this rule:
 
-``js
+```javascript
 /*eslint import-sort-source/import-order: "error"*/
 /*eslint-env es6*/
 
 import foo from 'b'
 import bar from a
-``
+```
 
