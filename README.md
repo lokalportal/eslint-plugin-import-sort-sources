@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/lokalportal/eslint-plugin-import-sort-sources.svg?branch=master)](https://travis-ci.org/lokalportal/eslint-plugin-import-sort-sources)
+
 # Require imports to be sorted alphabeticly considering source
 
 When declaring multiple imports, some developers prefer to sort imports alphabetically after theire sources keep imports at the same line-number.
