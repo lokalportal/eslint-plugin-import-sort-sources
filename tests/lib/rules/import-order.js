@@ -13,6 +13,12 @@ ruleTester.run('import-order', rule, {
     import x from 'a'
     import { something, more } from 'c'
     import { somethingElse } from 'c'
+    `,
+    `
+    import x from 'a'
+    import { something, more } from 'c'
+    import { somethingElse } from 'c'
+    import { somethingElse2 } from './c'
     `  
   ],
 
@@ -21,6 +27,16 @@ ruleTester.run('import-order', rule, {
       code: 
         `
         import x from 'c'
+        import { something, more } from 'b'
+        import { somethingElse } from 'c'
+        `  
+      ,
+      errors: [ { message: 'sort your imports!' } ]
+    },
+    {
+      code: 
+        `
+        import x from './a'
         import { something, more } from 'b'
         import { somethingElse } from 'c'
         `  
